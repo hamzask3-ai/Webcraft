@@ -1,731 +1,1128 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google SEO -->
-<title>HSK Webdesign | Professionelle Websites in Luxemburg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="HSK Webdesign erstellt moderne, professionelle und responsive Websites für Unternehmen, Selbstständige, Vereine und Projekte in Luxemburg.">
+  <!-- =========================
+       SEO
+  ========================== -->
 
-<meta name="keywords" content="HSK Webdesign, Webdesign Luxemburg, Website erstellen Luxemburg, professionelle Website, responsive Webdesign">
+  <title>HSK Webdesign | Professionelles Webdesign in Luxemburg</title>
 
-<meta name="author" content="HSK Webdesign">
+  <meta name="description" content="HSK Webdesign erstellt moderne, professionelle und responsive Websites in Luxemburg für Unternehmen, Selbstständige, Vereine und Projekte.">
 
-<meta name="robots" content="index, follow">
+  <meta name="keywords" content="HSK Webdesign, Webdesign Luxemburg, Website erstellen Luxemburg, professionelle Website, responsive Webdesign, Website Design Luxemburg">
 
-<!-- Google Search Console -->
-<meta name="google-site-verification" content="ETlDo8HJy1k3MWJ4YdBgNu_xQTrm17kAQq86I2wXtHI">
+  <meta name="author" content="HSK Webdesign">
 
-<!-- Social Media / WhatsApp -->
-<meta property="og:title" content="HSK Webdesign | Professionelle Websites in Luxemburg">
-<meta property="og:description" content="Moderne und professionelle Websites für Unternehmen, Selbstständige, Vereine und Projekte.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hamzask3-ai.github.io/Webcraft/">
+  <meta name="robots" content="index, follow">
 
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="ETlDo8HJy1k3MWJ4YdBgNu_xQTrm17kAQq86I2wXtHI">
 
-html{
-  scroll-behavior:smooth;
-}
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hamzask3-ai.github.io/Webcraft/">
 
-body{
-  font-family:Arial,sans-serif;
-  background:#07111f;
-  color:#f7fbff;
-  line-height:1.6;
-}
+  <!-- Open Graph -->
+  <meta property="og:title" content="HSK Webdesign | Professionelles Webdesign in Luxemburg">
+  <meta property="og:description" content="Moderne und professionelle Websites von HSK Webdesign in Luxemburg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamzask3-ai.github.io/Webcraft/">
+  <meta property="og:site_name" content="HSK Webdesign">
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
+  <!-- =========================
+       STRUCTURED DATA
+  ========================== -->
 
-.container{
-  width:min(1100px,92%);
-  margin:auto;
-}
-
-nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:rgba(7,17,31,.95);
-  border-bottom:1px solid #1b2b40;
-}
-
-.navin{
-  height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:23px;
-  font-weight:800;
-}
-
-.logo span,
-h1 span,
-.sectiontag{
-  color:#45b8ff;
-}
-
-.navlinks{
-  display:flex;
-  gap:28px;
-  color:#b8c7d8;
-  font-size:14px;
-}
-
-.navlinks a:hover{
-  color:#45b8ff;
-}
-
-.call{
-  background:#45b8ff;
-  color:#03101c;
-  padding:11px 18px;
-  border-radius:10px;
-  font-weight:800;
-}
-
-.hero{
-  padding:110px 0 100px;
-  background:radial-gradient(
-    circle at 70% 20%,
-    #123c62 0,
-    transparent 35%
-  );
-}
-
-.badge{
-  display:inline-block;
-  padding:7px 12px;
-  border:1px solid #285577;
-  border-radius:999px;
-  color:#75caff;
-  font-size:13px;
-  margin-bottom:20px;
-}
-
-h1{
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.02;
-  letter-spacing:-3px;
-}
-
-.hero p{
-  color:#aebed0;
-  max-width:700px;
-  font-size:19px;
-  margin:24px 0 32px;
-}
-
-.buttons{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  padding:14px 22px;
-  border-radius:11px;
-  font-weight:800;
-  display:inline-block;
-}
-
-.primary{
-  background:#45b8ff;
-  color:#03101c;
-}
-
-.secondary{
-  border:1px solid #30465e;
-}
-
-.secondary:hover{
-  border-color:#45b8ff;
-}
-
-section{
-  padding:82px 0;
-}
-
-.sectiontag{
-  font-size:13px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-}
-
-h2{
-  font-size:38px;
-  letter-spacing:-1.5px;
-  margin:8px 0 12px;
-}
-
-.lead{
-  color:#9eb0c3;
-  max-width:700px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:35px;
-}
-
-.card{
-  background:#0d1a2a;
-  border:1px solid #1d3045;
-  border-radius:16px;
-  padding:28px;
-}
-
-.card:hover{
-  border-color:#45b8ff;
-}
-
-.icon{
-  font-size:28px;
-  margin-bottom:15px;
-}
-
-.card h3{
-  margin-bottom:8px;
-}
-
-.card p{
-  color:#9eb0c3;
-  font-size:15px;
-}
-
-.price{
-  font-size:35px;
-  font-weight:900;
-  margin:16px 0;
-}
-
-.price small{
-  font-size:14px;
-  color:#8294a8;
-  font-weight:500;
-}
-
-.featured{
-  border-color:#45b8ff;
-  transform:translateY(-6px);
-}
-
-ul{
-  list-style:none;
-  margin:18px 0 25px;
-  color:#b5c4d4;
-}
-
-li{
-  margin:9px 0;
-}
-
-li:before{
-  content:"✓";
-  color:#45b8ff;
-  font-weight:900;
-  margin-right:9px;
-}
-
-.portfolio{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-  margin-top:35px;
-}
-
-.mock{
-  height:220px;
-  border-radius:16px;
-  border:1px solid #243a52;
-  background:linear-gradient(135deg,#11283e,#091521);
-  padding:24px;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-}
-
-.mock strong{
-  font-size:25px;
-}
-
-.mock span{
-  color:#91a8bd;
-  font-size:14px;
-}
-
-.contact{
-  background:#0c1928;
-  border-top:1px solid #1b3045;
-}
-
-.contactbox{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:30px;
-}
-
-footer{
-  padding:28px 0;
-  color:#71869b;
-  font-size:13px;
-  border-top:1px solid #17283a;
-}
-
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:#25D366;
-  color:white;
-  padding:14px 18px;
-  border-radius:50px;
-  font-weight:800;
-  box-shadow:0 8px 25px rgba(0,0,0,.3);
-  z-index:20;
-}
-
-@media(max-width:750px){
-
-  .navlinks{
-    display:none;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HSK Webdesign",
+    "alternateName": "HSK Webdesign Luxemburg",
+    "url": "https://hamzask3-ai.github.io/Webcraft/",
+    "telephone": "+354691180410",
+    "description": "HSK Webdesign erstellt moderne, professionelle und responsive Websites für Unternehmen, Selbstständige, Vereine und Projekte.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Luxembourg"
+    },
+    "knowsAbout": [
+      "Webdesign",
+      "Responsive Webdesign",
+      "Website-Erstellung"
+    ]
   }
+  </script>
 
-  .grid,
-  .portfolio{
-    grid-template-columns:1fr;
-  }
+  <!-- =========================
+       DESIGN
+  ========================== -->
 
-  .featured{
-    transform:none;
-  }
+  <style>
 
-  .contactbox{
-    flex-direction:column;
-    align-items:flex-start;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  .hero{
-    padding-top:75px;
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  h1{
-    letter-spacing:-2px;
-  }
-}
-</style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 17, 31, 0.95);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .logo span {
+      color: #3b9cff;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #d9e4f2;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #3b9cff;
+    }
+
+    .nav-button {
+      background: #168cff;
+      padding: 10px 17px;
+      border-radius: 8px;
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .nav-button:hover {
+      background: #0c74d8;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(27, 140, 255, 0.18), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(20, 100, 200, 0.12), transparent 35%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(59,156,255,0.35);
+      background: rgba(59,156,255,0.08);
+      color: #64b4ff;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #3b9cff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #b7c6d8;
+      max-width: 700px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 9px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: #168cff;
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #0c74d8;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      border: 1px solid #35516f;
+      color: white;
+    }
+
+    .button-secondary:hover {
+      border-color: #3b9cff;
+      color: #3b9cff;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: #9fb0c4;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      background: #0a1728;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #0e1d30;
+      border: 1px solid #1b3048;
+      border-radius: 15px;
+      padding: 28px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #318fe9;
+    }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #9fb0c4;
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process {
+      background: #07111f;
+    }
+
+    .process-number {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #168cff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       PRICES
+    ========================== */
+
+    .pricing {
+      background: #0a1728;
+    }
+
+    .price-card {
+      background: #0e1d30;
+      border: 1px solid #1b3048;
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+    }
+
+    .price-card.popular {
+      border-color: #168cff;
+      box-shadow: 0 0 30px rgba(22,140,255,0.12);
+    }
+
+    .popular-label {
+      position: absolute;
+      top: -14px;
+      right: 20px;
+      background: #168cff;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .price-card h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .price span {
+      font-size: 14px;
+      color: #9fb0c4;
+      font-weight: normal;
+    }
+
+    .price-card ul {
+      list-style: none;
+      margin: 25px 0;
+    }
+
+    .price-card li {
+      margin-bottom: 12px;
+      color: #c4d1df;
+    }
+
+    .price-card li::before {
+      content: "✓";
+      color: #3b9cff;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .price-note {
+      text-align: center;
+      margin-top: 30px;
+      color: #8fa1b5;
+      font-size: 14px;
+    }
+
+    /* =========================
+       PORTFOLIO
+    ========================== */
+
+    .portfolio {
+      background: #07111f;
+    }
+
+    .portfolio-card {
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(145deg, #122943, #0b1727);
+    }
+
+    .portfolio-card h3 {
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact {
+      background: #0a1728;
+    }
+
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      background: #0e1d30;
+      border: 1px solid #1b3048;
+      border-radius: 18px;
+      padding: 50px 30px;
+    }
+
+    .contact-box h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      color: #aab9ca;
+      margin-bottom: 25px;
+    }
+
+    .phone {
+      display: block;
+      font-size: 24px;
+      color: #3b9cff;
+      font-weight: bold;
+      margin: 20px 0 30px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      background: #050d18;
+      color: #8193a8;
+      font-size: 14px;
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================== */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      background: #25D366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+      transition: 0.2s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-title h2 {
+        font-size: 32px;
+      }
+
+      .whatsapp {
+        right: 15px;
+        bottom: 15px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
-<nav>
-  <div class="container navin">
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
-    <a class="logo" href="#">
-      HSK <span>Webdesign</span>
-    </a>
+  <header>
 
-    <div class="navlinks">
-      <a href="#angebot">Leistungen</a>
-      <a href="#ablauf">Ablauf</a>
-      <a href="#preise">Preise</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#kontakt">Kontakt</a>
-    </div>
+    <div class="container">
 
-    <a class="call" href="tel:+354691180410">
-      Anrufen
-    </a>
+      <nav>
 
-  </div>
-</nav>
-
-<header class="hero">
-
-  <div class="container">
-
-    <div class="badge">
-      ● HSK Webdesign · Luxemburg
-    </div>
-
-    <h1>
-      HSK Webdesign.<br>
-      <span>Deine Website. Professionell gemacht.</span>
-    </h1>
-
-    <p>
-      Moderne, professionelle und responsive Websites für Unternehmen,
-      Selbstständige, Vereine und persönliche Projekte in Luxemburg.
-    </p>
-
-    <div class="buttons">
-
-      <a class="btn primary" href="tel:+354691180410">
-        📞 Jetzt anrufen
-      </a>
-
-      <a class="btn secondary" href="#preise">
-        Preise ansehen
-      </a>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<section id="angebot">
-
-  <div class="container">
-
-    <div class="sectiontag">
-      Webdesign
-    </div>
-
-    <h2>
-      Professionelles Webdesign für dein Projekt
-    </h2>
-
-    <p class="lead">
-      HSK Webdesign erstellt moderne Websites mit einem klaren Design,
-      guter Benutzerfreundlichkeit und optimierter Darstellung auf
-      Smartphone, Tablet und Computer.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>Moderne Websites</h3>
-        <p>
-          Professionelles Webdesign, das zu deinem Unternehmen,
-          Verein oder Projekt passt.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">📱</div>
-        <h3>Responsive Design</h3>
-        <p>
-          Deine Website funktioniert auf Smartphone, Tablet
-          und Computer.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">⚡</div>
-        <h3>Schnelle Websites</h3>
-        <p>
-          Klare Navigation, übersichtliche Inhalte und eine
-          angenehme Nutzererfahrung.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎨</div>
-        <h3>Individuelles Design</h3>
-        <p>
-          Jede Website wird passend zu deiner Idee und deinem
-          gewünschten Stil gestaltet.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚀</div>
-        <h3>Website erstellen lassen</h3>
-        <p>
-          Von der ersten Idee bis zur fertigen Website –
-          einfach und verständlich.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🛠️</div>
-        <h3>Anpassungen</h3>
-        <p>
-          Bestehende Websites können erweitert, verändert
-          und modernisiert werden.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="ablauf">
-
-  <div class="container">
-
-    <div class="sectiontag">
-      So funktioniert es
-    </div>
-
-    <h2>
-      Von der Idee zur fertigen Website
-    </h2>
-
-    <p class="lead">
-      Der Ablauf ist einfach: Du erzählst mir deine Idee und
-      HSK Webdesign kümmert sich um die Umsetzung.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">📞</div>
-        <h3>1. Kontakt aufnehmen</h3>
-        <p>
-          Du kontaktierst HSK Webdesign und erzählst,
-          welche Website du möchtest.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">💡</div>
-        <h3>2. Planung</h3>
-        <p>
-          Gemeinsam werden Design, Inhalte und Funktionen
-          der Website festgelegt.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>3. Erstellung</h3>
-        <p>
-          Die Website wird individuell erstellt und
-          für verschiedene Geräte optimiert.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🌐</div>
-        <h3>4. Veröffentlichung</h3>
-        <p>
-          Nach der Fertigstellung kann deine Website
-          online veröffentlicht werden.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="preise">
-
-  <div class="container">
-
-    <div class="sectiontag">
-      Preise
-    </div>
-
-    <h2>
-      Einfach & transparent
-    </h2>
-
-    <p class="lead">
-      Beispielpreise – der genaue Preis hängt vom Umfang,
-      Design und den gewünschten Funktionen ab.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-
-        <h3>Basic</h3>
-
-        <div class="price">
-          ab 99€ <small>/ Projekt</small>
-        </div>
-
-        <ul>
-          <li>1–3 Seiten</li>
-          <li>Modernes Design</li>
-          <li>Mobile Ansicht</li>
-        </ul>
-
-        <a class="btn secondary" href="tel:+354691180410">
-          Anfragen
+        <a href="#home" class="logo">
+          HSK <span>Webdesign</span>
         </a>
 
-      </div>
+        <ul class="nav-links">
 
+          <li>
+            <a href="#leistungen">Leistungen</a>
+          </li>
 
-      <div class="card featured">
+          <li>
+            <a href="#ablauf">Ablauf</a>
+          </li>
 
-        <h3>Pro</h3>
+          <li>
+            <a href="#preise">Preise</a>
+          </li>
 
-        <div class="price">
-          ab 199€ <small>/ Projekt</small>
-        </div>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
 
-        <ul>
-          <li>Bis zu 7 Seiten</li>
-          <li>Individuelles Design</li>
-          <li>Mobile Ansicht</li>
-          <li>Kontaktbereich</li>
+          <li>
+            <a href="#kontakt" class="nav-button">
+              Kontakt
+            </a>
+          </li>
+
         </ul>
 
-        <a class="btn primary" href="tel:+354691180410">
-          Anfragen
-        </a>
+      </nav>
 
-      </div>
+    </div>
+
+  </header>
 
 
-      <div class="card">
+  <!-- =========================
+       HERO
+  ========================== -->
 
-        <h3>Premium</h3>
+  <main>
 
-        <div class="price">
-          ab 299€ <small>/ Projekt</small>
+    <section class="hero" id="home">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            HSK Webdesign · Luxemburg
+          </div>
+
+          <h1>
+            HSK Webdesign.
+            <br>
+            <span>Deine Website. Professionell gemacht.</span>
+          </h1>
+
+          <p>
+            Moderne, professionelle und responsive Websites
+            für Unternehmen, Selbstständige, Vereine und Projekte.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#kontakt" class="button button-primary">
+              Website anfragen
+            </a>
+
+            <a href="#portfolio" class="button button-secondary">
+              Portfolio ansehen
+            </a>
+
+          </div>
+
         </div>
 
-        <ul>
-          <li>Individuelle Website</li>
-          <li>Mehrere Funktionen</li>
-          <li>Premium Design</li>
-          <li>Persönliche Beratung</li>
-        </ul>
+      </div>
 
-        <a class="btn secondary" href="tel:+354691180410">
-          Anfragen
-        </a>
+    </section>
+
+
+    <!-- =========================
+         LEISTUNGEN
+    ========================== -->
+
+    <section class="services" id="leistungen">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Webdesign & Websites</h2>
+
+          <p>
+            HSK Webdesign erstellt moderne Websites,
+            die professionell aussehen und auf Smartphone,
+            Tablet und Computer funktionieren.
+          </p>
+
+        </div>
+
+
+        <div class="grid">
+
+          <div class="card">
+
+            <div class="card-icon">🌐</div>
+
+            <h3>Webdesign</h3>
+
+            <p>
+              Moderne und individuelle Websites passend
+              zu deinem Unternehmen, Projekt oder Verein.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">📱</div>
+
+            <h3>Responsive Design</h3>
+
+            <p>
+              Deine Website funktioniert auf Smartphones,
+              Tablets und Computern.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">⚡</div>
+
+            <h3>Schnelle Websites</h3>
+
+            <p>
+              Klare Strukturen und modernes Design
+              für eine angenehme Nutzung.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">🎨</div>
+
+            <h3>Individuelles Design</h3>
+
+            <p>
+              Farben, Texte und Aufbau werden an
+              deine Vorstellungen angepasst.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">💬</div>
+
+            <h3>Kontakt & Anfragen</h3>
+
+            <p>
+              Integrierte Kontaktmöglichkeiten,
+              damit Besucher dich einfach erreichen können.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">🔧</div>
+
+            <h3>Anpassungen</h3>
+
+            <p>
+              Bestehende Websites können nach deinen
+              Wünschen angepasst und verbessert werden.
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
-<section id="portfolio">
+    <!-- =========================
+         ABLAUF
+    ========================== -->
 
-  <div class="container">
+    <section class="process" id="ablauf">
 
-    <div class="sectiontag">
-      Portfolio
-    </div>
+      <div class="container">
 
-    <h2>
-      Beispiele für Websites
-    </h2>
+        <div class="section-title">
 
-    <p class="lead">
-      Diese Beispiele zeigen verschiedene Arten von Websites,
-      die mit HSK Webdesign umgesetzt werden können.
-    </p>
+          <h2>So funktioniert es</h2>
 
-    <div class="portfolio">
+          <p>
+            Von der ersten Idee bis zur fertigen Website.
+          </p>
 
-      <div class="mock">
-        <strong>Business Website</strong>
-        <span>
-          Professioneller Online-Auftritt für Unternehmen
-        </span>
+        </div>
+
+
+        <div class="grid">
+
+          <div class="card">
+
+            <div class="process-number">1</div>
+
+            <h3>Kontakt aufnehmen</h3>
+
+            <p>
+              Du erzählst mir, welche Website du möchtest
+              und welche Funktionen benötigt werden.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="process-number">2</div>
+
+            <h3>Planung</h3>
+
+            <p>
+              Gemeinsam werden Aufbau, Inhalte,
+              Farben und Design festgelegt.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="process-number">3</div>
+
+            <h3>Erstellung</h3>
+
+            <p>
+              Ich erstelle deine Website und passe
+              das Design an deine Vorstellungen an.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="process-number">4</div>
+
+            <h3>Veröffentlichung</h3>
+
+            <p>
+              Nach deiner Zustimmung wird die Website
+              veröffentlicht und online gestellt.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="mock">
-        <strong>Restaurant Website</strong>
-        <span>
-          Speisekarte, Informationen und Kontakt
-        </span>
+    </section>
+
+
+    <!-- =========================
+         PREISE
+    ========================== -->
+
+    <section class="pricing" id="preise">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Preise</h2>
+
+          <p>
+            Einfache Pakete für unterschiedliche Website-Projekte.
+          </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+          <div class="price-card">
+
+            <h3>Basic</h3>
+
+            <div class="price">
+              ab 99 € 
+              <span>einmalig</span>
+            </div>
+
+            <ul>
+
+              <li>Moderne Startseite</li>
+
+              <li>Responsive Design</li>
+
+              <li>Individuelle Farben</li>
+
+              <li>Kontaktmöglichkeit</li>
+
+            </ul>
+
+            <a href="#kontakt" class="button button-primary">
+              Anfrage senden
+            </a>
+
+          </div>
+
+
+          <div class="price-card popular">
+
+            <div class="popular-label">
+              BELIEBT
+            </div>
+
+            <h3>Professional</h3>
+
+            <div class="price">
+              ab 199 €
+              <span>einmalig</span>
+            </div>
+
+            <ul>
+
+              <li>Mehrere Seiten</li>
+
+              <li>Modernes individuelles Design</li>
+
+              <li>Responsive Design</li>
+
+              <li>Kontaktbereich</li>
+
+              <li>SEO-Grundlagen</li>
+
+            </ul>
+
+            <a href="#kontakt" class="button button-primary">
+              Anfrage senden
+            </a>
+
+          </div>
+
+
+          <div class="price-card">
+
+            <h3>Premium</h3>
+
+            <div class="price">
+              ab 299 €
+              <span>einmalig</span>
+            </div>
+
+            <ul>
+
+              <li>Individuelle Website</li>
+
+              <li>Mehrere Seiten</li>
+
+              <li>Individuelles Design</li>
+
+              <li>SEO-Grundlagen</li>
+
+              <li>Zusätzliche Funktionen</li>
+
+            </ul>
+
+            <a href="#kontakt" class="button button-primary">
+              Anfrage senden
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+        <p class="price-note">
+          Die endgültige Preisgestaltung hängt vom Umfang,
+          Design und den gewünschten Funktionen der Website ab.
+        </p>
+
       </div>
 
-      <div class="mock">
-        <strong>Portfolio Website</strong>
-        <span>
-          Persönliche Website für Kreative und Projekte
-        </span>
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+
+    <section class="portfolio" id="portfolio">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Portfolio</h2>
+
+          <p>
+            Beispiele für Websites, die mit HSK Webdesign
+            erstellt werden können.
+          </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+          <div class="card portfolio-card">
+
+            <h3>Business Website</h3>
+
+            <p>
+              Professionelle Website für ein Unternehmen
+              oder einen Dienstleister.
+            </p>
+
+          </div>
+
+
+          <div class="card portfolio-card">
+
+            <h3>Restaurant Website</h3>
+
+            <p>
+              Moderne Website für Restaurants,
+              Cafés und lokale Unternehmen.
+            </p>
+
+          </div>
+
+
+          <div class="card portfolio-card">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+              Persönliche Website für Projekte,
+              Arbeiten oder Dienstleistungen.
+            </p>
+
+          </div>
+
+
+          <div class="card portfolio-card">
+
+            <h3>Vereinswebsite</h3>
+
+            <p>
+              Übersichtliche Website für Vereine,
+              Teams und Projekte.
+            </p>
+
+          </div>
+
+
+          <div class="card portfolio-card">
+
+            <h3>Landingpage</h3>
+
+            <p>
+              Moderne Landingpage für ein Produkt,
+              Angebot oder Projekt.
+            </p>
+
+          </div>
+
+
+          <div class="card portfolio-card">
+
+            <h3>Individuelle Website</h3>
+
+            <p>
+              Eine Website genau nach deinen Vorstellungen
+              und Anforderungen.
+            </p>
+
+          </div>
+
+
+        </div>
+
       </div>
 
-      <div class="mock">
-        <strong>Vereinswebsite</strong>
-        <span>
-          Moderne Website für Vereine und Organisationen
-        </span>
+    </section>
+
+
+    <!-- =========================
+         KONTAKT
+    ========================== -->
+
+    <section class="contact" id="kontakt">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <h2>Deine Website starten</h2>
+
+          <p>
+            Du möchtest eine Website erstellen lassen?
+            Schreib mir und erzähl mir kurz von deinem Projekt.
+          </p>
+
+          <a
+            href="https://wa.me/354691180410"
+            class="button button-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            💬 WhatsApp schreiben
+          </a>
+
+          <a
+            href="tel:+354691180410"
+            class="phone"
+          >
+            +354 691 180 410
+          </a>
+
+          <p>
+            HSK Webdesign · Luxemburg
+          </p>
+
+        </div>
+
       </div>
 
-    </div>
+    </section>
 
-  </div>
-
-</section>
+  </main>
 
 
-<section id="kontakt" class="contact">
+  <!-- =========================
+       WHATSAPP BUTTON
+  ========================== -->
 
-  <div class="container contactbox">
+  <a
+    href="https://wa.me/354691180410"
+    class="whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="HSK Webdesign über WhatsApp kontaktieren"
+  >
+    💬 WhatsApp
+  </a>
 
-    <div>
 
-      <div class="sectiontag">
-        Kontakt
-      </div>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-      <h2>
-        Bereit für deine Website?
-      </h2>
+  <footer>
 
-      <p class="lead">
-        Du möchtest eine Website erstellen lassen?
-        Kontaktiere HSK Webdesign und erzähl mir von deinem Projekt.
+    <div class="container">
+
+      <p>
+        © 2026 HSK Webdesign · Professionelle Websites in Luxemburg
       </p>
 
     </div>
 
-    <a class="btn primary" href="tel:+354691180410">
-      📞 +354 691 180 410
-    </a>
+  </footer>
 
-  </div>
-
-</section>
-
-
-<footer>
-
-  <div class="container">
-    © 2026 HSK Webdesign · Professionelle Websites in Luxemburg
-  </div>
-
-</footer>
-
-
-<a
-  class="whatsapp"
-  href="https://wa.me/354691180410"
-  target="_blank"
-  rel="noopener"
->
-  💬 WhatsApp
-</a>
 
 </body>
 </html>
