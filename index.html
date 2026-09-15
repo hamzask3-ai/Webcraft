@@ -1,40 +1,958 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WebCraft – Moderne Websites</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#07111f;color:#f7fbff;line-height:1.6}
-a{text-decoration:none;color:inherit}.container{width:min(1100px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.9);border-bottom:1px solid #1b2b40}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:23px;font-weight:800}.logo span,h1 span,.sectiontag{color:#45b8ff}
-.navlinks{display:flex;gap:28px;color:#b8c7d8;font-size:14px}.call{background:#45b8ff;color:#03101c;padding:11px 18px;border-radius:10px;font-weight:800}
-.hero{padding:100px 0 90px;background:radial-gradient(circle at 70% 20%,#123c62 0,transparent 35%)}
-.badge{display:inline-block;padding:7px 12px;border:1px solid #285577;border-radius:999px;color:#75caff;font-size:13px;margin-bottom:20px}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-3px}
-.hero p{color:#aebed0;max-width:650px;font-size:19px;margin:24px 0 32px}.buttons{display:flex;gap:14px;flex-wrap:wrap}
-.btn{padding:14px 22px;border-radius:11px;font-weight:800;display:inline-block}.primary{background:#45b8ff;color:#03101c}.secondary{border:1px solid #30465e}
-section{padding:82px 0}.sectiontag{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}
-h2{font-size:38px;letter-spacing:-1.5px;margin:8px 0 12px}.lead{color:#9eb0c3;max-width:650px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.card{background:#0d1a2a;border:1px solid #1d3045;border-radius:16px;padding:28px}
-.icon{font-size:28px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p{color:#9eb0c3;font-size:15px}
-.price{font-size:35px;font-weight:900;margin:16px 0}.price small{font-size:14px;color:#8294a8;font-weight:500}
-.featured{border-color:#45b8ff;transform:translateY(-6px)}ul{list-style:none;margin:18px 0 25px;color:#b5c4d4}li{margin:9px 0}li:before{content:"✓";color:#45b8ff;font-weight:900;margin-right:9px}
-.portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}.mock{height:220px;border-radius:16px;border:1px solid #243a52;background:linear-gradient(135deg,#11283e,#091521);padding:24px;display:flex;flex-direction:column;justify-content:flex-end}.mock strong{font-size:25px}.mock span{color:#91a8bd;font-size:14px}
-.contact{background:#0c1928;border-top:1px solid #1b3045}.contactbox{display:flex;justify-content:space-between;align-items:center;gap:30px}
-footer{padding:28px 0;color:#71869b;font-size:13px;border-top:1px solid #17283a}
-@media(max-width:750px){.navlinks{display:none}.grid,.portfolio{grid-template-columns:1fr}.featured{transform:none}.contactbox{flex-direction:column;align-items:flex-start}.hero{padding-top:75px}h1{letter-spacing:-2px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="HSK Webdesign – moderne, professionelle und responsive Websites für Unternehmen, Selbstständige, Vereine und Projekte.">
+
+  <title>HSK Webdesign | Moderne Websites</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #f5f9ff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 17, 31, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1d3046;
+    }
+
+    .nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 900;
+    }
+
+    .logo span {
+      color: #45b8ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      color: #b8c7d8;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #45b8ff;
+    }
+
+    .nav-button {
+      background: #45b8ff;
+      color: #03101a;
+      padding: 11px 17px;
+      border-radius: 10px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 110px 0 95px;
+      background:
+        radial-gradient(
+          circle at 75% 15%,
+          #164a72 0,
+          transparent 35%
+        );
+    }
+
+    .tag {
+      display: inline-block;
+      color: #76caff;
+      border: 1px solid #285577;
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 7vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+    }
+
+    .blue {
+      color: #45b8ff;
+    }
+
+    .hero-text {
+      color: #a5b6c8;
+      max-width: 680px;
+      font-size: 19px;
+      margin: 25px 0 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 21px;
+      border-radius: 11px;
+      font-weight: 800;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .primary {
+      background: #45b8ff;
+      color: #03101a;
+    }
+
+    .outline {
+      border: 1px solid #30465e;
+      color: white;
+    }
+
+    .outline:hover {
+      border-color: #45b8ff;
+      color: #45b8ff;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .label {
+      color: #45b8ff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: 40px;
+      letter-spacing: -1.5px;
+      margin: 8px 0 12px;
+    }
+
+    .lead {
+      color: #a5b6c8;
+      max-width: 680px;
+    }
+
+    /* CARDS */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #0d1a2a;
+      border: 1px solid #1e3248;
+      border-radius: 17px;
+      padding: 28px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #45b8ff;
+    }
+
+    .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #9eafc1;
+      font-size: 15px;
+    }
+
+    /* PROCESS */
+
+    .number {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #123b5c;
+      color: #68c4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    /* PRICES */
+
+    .price {
+      font-size: 36px;
+      font-weight: 900;
+      margin: 16px 0;
+    }
+
+    .price small {
+      font-size: 13px;
+      color: #8093a7;
+      font-weight: 500;
+    }
+
+    .price-card {
+      position: relative;
+    }
+
+    .popular {
+      border-color: #45b8ff;
+      transform: translateY(-6px);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -13px;
+      right: 20px;
+      background: #45b8ff;
+      color: #03101a;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    ul {
+      list-style: none;
+      color: #b4c4d4;
+      margin: 18px 0 25px;
+    }
+
+    li {
+      margin: 9px 0;
+    }
+
+    li::before {
+      content: "✓";
+      color: #45b8ff;
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .portfolio-card {
+      height: 230px;
+      border: 1px solid #263c53;
+      border-radius: 17px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background:
+        linear-gradient(
+          135deg,
+          #102a43,
+          #091521
+        );
+      transition: 0.25s;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      border-color: #45b8ff;
+    }
+
+    .portfolio-card strong {
+      font-size: 25px;
+    }
+
+    .portfolio-card span {
+      color: #91a8bc;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #0b1827;
+      border-top: 1px solid #1b3045;
+    }
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .phone {
+      display: inline-block;
+      font-size: 23px;
+      font-weight: 900;
+      margin-top: 15px;
+      color: white;
+    }
+
+    .phone:hover {
+      color: #45b8ff;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #17283a;
+      padding: 28px 0;
+      color: #70859a;
+      font-size: 13px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #20c46a;
+      color: white;
+      padding: 13px 17px;
+      border-radius: 999px;
+      font-weight: 900;
+      z-index: 200;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.04);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 78px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio {
+        grid-template-columns: 1fr;
+      }
+
+      .popular {
+        transform: none;
+      }
+
+      .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-button {
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav><div class="container navin"><a class="logo" href="#">Web<span>Craft</span></a><div class="navlinks"><a href="#angebot">Angebot</a><a href="#preise">Preise</a><a href="#portfolio">Beispiele</a><a href="#kontakt">Kontakt</a></div><a class="call" href="tel:+354691180410">Anrufen</a></div></nav>
-<header class="hero"><div class="container"><div class="badge">● Neue Projekte verfügbar</div><h1>Deine Website.<br><span>Professionell gemacht.</span></h1><p>Moderne, schnelle und responsive Websites für Unternehmen, Selbstständige und Projekte. Du hast eine Idee? Ruf einfach an.</p><div class="buttons"><a class="btn primary" href="tel:+354691180410">📞 Jetzt anrufen</a><a class="btn secondary" href="#preise">Preise ansehen</a></div></div></header>
-<section id="angebot"><div class="container"><div class="sectiontag">Was ich mache</div><h2>Eine Website, die zu dir passt.</h2><p class="lead">Von der ersten Idee bis zur fertigen Seite – modern, übersichtlich und für Smartphones optimiert.</p><div class="grid"><div class="card"><div class="icon">💻</div><h3>Moderne Websites</h3><p>Ein professionelles Design, das seriös aussieht und deine Besucher überzeugt.</p></div><div class="card"><div class="icon">📱</div><h3>Für jedes Gerät</h3><p>Deine Website funktioniert auf Handy, Tablet und Computer.</p></div><div class="card"><div class="icon">⚡</div><h3>Schnell & einfach</h3><p>Klare Navigation und schnelle Ladezeiten für eine gute Nutzererfahrung.</p></div></div></div></section>
-<section id="preise"><div class="container"><div class="sectiontag">Pakete</div><h2>Einfach & transparent.</h2><p class="lead">Beispielpreise – der genaue Preis hängt vom Umfang des Projekts ab.</p><div class="grid"><div class="card"><h3>Basic</h3><div class="price">ab 99€ <small>/ Projekt</small></div><ul><li>1–3 Seiten</li><li>Modernes Design</li><li>Mobile Ansicht</li></ul><a class="btn secondary" href="tel:+354691180410">Anfragen</a></div><div class="card featured"><h3>Pro</h3><div class="price">ab 199€ <small>/ Projekt</small></div><ul><li>Bis zu 7 Seiten</li><li>Individuelles Design</li><li>Mobile Ansicht</li><li>Kontaktbereich</li></ul><a class="btn primary" href="tel:+354691180410">Anfragen</a></div><div class="card"><h3>Premium</h3><div class="price">ab 299€ <small>/ Projekt</small></div><ul><li>Individuelle Website</li><li>Mehrere Funktionen</li><li>Premium Design</li><li>Persönliche Beratung</li></ul><a class="btn secondary" href="tel:+354691180410">Anfragen</a></div></div></div></section>
-<section id="portfolio"><div class="container"><div class="sectiontag">Portfolio</div><h2>Deine Idee könnte hier stehen.</h2><p class="lead">Beispielhafte Projekte, die du später mit echten Kundenprojekten ersetzen kannst.</p><div class="portfolio"><div class="mock"><strong>Business Website</strong><span>Professioneller Auftritt für Unternehmen</span></div><div class="mock"><strong>Restaurant Website</strong><span>Speisekarte, Öffnungszeiten & Kontakt</span></div><div class="mock"><strong>Portfolio</strong><span>Persönliche Website für Kreative</span></div><div class="mock"><strong>Online-Projekt</strong><span>Modernes Design für dein Projekt</span></div></div></div></section>
-<section class="contact" id="kontakt"><div class="container contactbox"><div><div class="sectiontag">Kontakt</div><h2>Bereit für deine Website?</h2><p class="lead">Ruf einfach an und erzähl mir, was du brauchst.</p></div><a class="btn primary" href="tel:+354691180410">📞 +354 691 180 410</a></div></section>
-<footer><div class="container">© 2026 WebCraft · Websites, die Eindruck machen.</div></footer>
-</body></html>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        HSK <span>Webdesign</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#preise">Preise</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+
+      <a
+        href="tel:+354691180410"
+        class="nav-button"
+      >
+        Anrufen
+      </a>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <div class="tag">
+        ● Moderne Websites · Persönlicher Service
+      </div>
+
+      <h1>
+        Deine Website.<br>
+        <span class="blue">
+          Professionell gemacht.
+        </span>
+      </h1>
+
+      <p class="hero-text">
+        HSK Webdesign erstellt moderne, schnelle und
+        responsive Websites für Unternehmen,
+        Selbstständige, Vereine und persönliche Projekte.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="tel:+354691180410"
+          class="button primary"
+        >
+          📞 Jetzt anrufen
+        </a>
+
+        <a
+          href="https://wa.me/354691180410?text=Hallo%20HSK%20Webdesign%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Website."
+          class="button outline"
+          target="_blank"
+        >
+          💬 WhatsApp schreiben
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- LEISTUNGEN -->
+
+  <section id="leistungen">
+
+    <div class="container">
+
+      <div class="label">
+        Leistungen
+      </div>
+
+      <h2>
+        Alles für einen starken Webauftritt.
+      </h2>
+
+      <p class="lead">
+        Von einer einfachen Präsentationsseite bis
+        zu einer individuellen Unternehmenswebsite.
+      </p>
+
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Webdesign</h3>
+          <p>
+            Modernes und professionelles Design
+            passend zu deinem Unternehmen oder Projekt.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Responsive Design</h3>
+          <p>
+            Deine Website funktioniert auf Smartphone,
+            Tablet und Computer.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Schnelle Websites</h3>
+          <p>
+            Klare Navigation und eine angenehme
+            Nutzererfahrung.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>Individuelles Design</h3>
+          <p>
+            Farben, Inhalte und Aufbau werden
+            an deine Marke angepasst.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">📞</div>
+          <h3>Kontakt & Anfragen</h3>
+          <p>
+            Telefon- und WhatsApp-Buttons,
+            damit Kunden dich schnell erreichen.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🔧</div>
+          <h3>Anpassungen</h3>
+          <p>
+            Texte, Bilder und weitere Inhalte
+            können nach Absprache angepasst werden.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABLAUF -->
+
+  <section id="ablauf">
+
+    <div class="container">
+
+      <div class="label">
+        So funktioniert es
+      </div>
+
+      <h2>
+        Von der Idee zur fertigen Website.
+      </h2>
+
+
+      <div class="grid">
+
+        <div class="card">
+
+          <div class="number">
+            1
+          </div>
+
+          <h3>
+            Kontakt aufnehmen
+          </h3>
+
+          <p>
+            Du rufst an oder schreibst über WhatsApp
+            und erzählst von deiner Idee.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="number">
+            2
+          </div>
+
+          <h3>
+            Planung
+          </h3>
+
+          <p>
+            Wir legen Seiten, Inhalte und gewünschte
+            Funktionen gemeinsam fest.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="number">
+            3
+          </div>
+
+          <h3>
+            Erstellung
+          </h3>
+
+          <p>
+            HSK Webdesign erstellt das Design
+            und setzt deine Website um.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="number">
+            4
+          </div>
+
+          <h3>
+            Veröffentlichung
+          </h3>
+
+          <p>
+            Nach deiner Freigabe wird die Website
+            online gestellt.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PREISE -->
+
+  <section id="preise">
+
+    <div class="container">
+
+      <div class="label">
+        Preise
+      </div>
+
+      <h2>
+        Einfache Pakete.
+      </h2>
+
+      <p class="lead">
+        Beispielpreise – der endgültige Preis hängt
+        vom Umfang und den gewünschten Funktionen ab.
+      </p>
+
+
+      <div class="grid">
+
+
+        <!-- BASIC -->
+
+        <div class="card price-card">
+
+          <h3>
+            Basic
+          </h3>
+
+          <div class="price">
+            ab 99 €
+          </div>
+
+          <ul>
+            <li>1–3 Seiten</li>
+            <li>Modernes Design</li>
+            <li>Responsive</li>
+            <li>Kontaktbereich</li>
+          </ul>
+
+          <a
+            href="tel:+354691180410"
+            class="button outline"
+          >
+            Anfragen
+          </a>
+
+        </div>
+
+
+        <!-- PROFESSIONAL -->
+
+        <div class="card price-card popular">
+
+          <div class="popular-badge">
+            BELIEBT
+          </div>
+
+          <h3>
+            Professional
+          </h3>
+
+          <div class="price">
+            ab 199 €
+          </div>
+
+          <ul>
+            <li>Bis zu 7 Seiten</li>
+            <li>Individuelles Design</li>
+            <li>Responsive</li>
+            <li>WhatsApp & Telefon</li>
+            <li>Portfolio / Galerie</li>
+          </ul>
+
+          <a
+            href="tel:+354691180410"
+            class="button primary"
+          >
+            Anfragen
+          </a>
+
+        </div>
+
+
+        <!-- PREMIUM -->
+
+        <div class="card price-card">
+
+          <h3>
+            Premium
+          </h3>
+
+          <div class="price">
+            ab 299 €
+          </div>
+
+          <ul>
+            <li>Individuelle Website</li>
+            <li>Mehr Funktionen</li>
+            <li>Premium Design</li>
+            <li>Persönliche Beratung</li>
+            <li>Individuelle Anpassungen</li>
+          </ul>
+
+          <a
+            href="tel:+354691180410"
+            class="button outline"
+          >
+            Anfragen
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio">
+
+    <div class="container">
+
+      <div class="label">
+        Portfolio
+      </div>
+
+      <h2>
+        Beispiele für Websites.
+      </h2>
+
+      <p class="lead">
+        Diese Bereiche kannst du später durch
+        echte Kundenprojekte ersetzen.
+      </p>
+
+
+      <div class="portfolio">
+
+        <div class="portfolio-card">
+          <strong>
+            Business Website
+          </strong>
+          <span>
+            Professioneller Auftritt für Unternehmen
+          </span>
+        </div>
+
+
+        <div class="portfolio-card">
+          <strong>
+            Restaurant Website
+          </strong>
+          <span>
+            Speisekarte · Öffnungszeiten · Kontakt
+          </span>
+        </div>
+
+
+        <div class="portfolio-card">
+          <strong>
+            Portfolio Website
+          </strong>
+          <span>
+            Für Kreative, Freelancer & Projekte
+          </span>
+        </div>
+
+
+        <div class="portfolio-card">
+          <strong>
+            Vereinswebsite
+          </strong>
+          <span>
+            Infos · Termine · Kontakt
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KONTAKT -->
+
+  <section
+    class="contact"
+    id="kontakt"
+  >
+
+    <div class="container contact-box">
+
+      <div>
+
+        <div class="label">
+          Kontakt
+        </div>
+
+        <h2>
+          Deine Website beginnt
+          mit einem Anruf.
+        </h2>
+
+        <p class="lead">
+          Erzähl uns kurz, was du brauchst –
+          wir schauen gemeinsam, was möglich ist.
+        </p>
+
+        <a
+          href="tel:+354691180410"
+          class="phone"
+        >
+          +354 691 180 410
+        </a>
+
+      </div>
+
+
+      <div class="buttons">
+
+        <a
+          href="tel:+354691180410"
+          class="button primary"
+        >
+          📞 Anrufen
+        </a>
+
+        <a
+          href="https://wa.me/354691180410?text=Hallo%20HSK%20Webdesign%2C%20ich%20m%C3%B6chte%20eine%20Website%20erstellen%20lassen."
+          class="button outline"
+          target="_blank"
+        >
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 HSK Webdesign ·
+      Moderne Websites für dein Projekt.
+
+    </div>
+
+  </footer>
+
+
+  <!-- FIXED WHATSAPP BUTTON -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/354691180410?text=Hallo%20HSK%20Webdesign%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Website."
+    target="_blank"
+  >
+    💬 WhatsApp
+  </a>
+
+</body>
+</html>
