@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hamzask3-ai.github.io/Webcraft/sitemap.xml
