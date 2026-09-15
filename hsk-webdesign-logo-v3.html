@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>HSK Webdesign — Logo v3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0A0A0A;
+    --blue:#3D5AFE;
+    --grey:#9A9CAE;
+    --line:#E2E3E9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:#F6F6F8;
+    font-family:'Space Grotesk', sans-serif;
+    padding:48px 24px;
+  }
+  .wrap{ max-width: 880px; margin: 0 auto; }
+  .section-label{ font-size: 13px; color:#6B6E80; margin-bottom: 14px; }
+
+  .card{
+    background: var(--black);
+    border-radius: 4px;
+    padding: 88px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 40px;
+  }
+
+  .logo{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap: 8px;
+  }
+  .logo-word{
+    display:flex;
+    align-items:baseline;
+    font-weight:700;
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing:-0.01em;
+    color: #fff;
+  }
+  .square{
+    width: 16px;
+    height: 16px;
+    background: var(--blue);
+    margin-left: 8px;
+    transform: translateY(-10px);
+    flex-shrink:0;
+  }
+  .logo-sub{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--grey);
+    letter-spacing: 0.03em;
+  }
+
+  /* icon */
+  .row{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+  @media (max-width:640px){ .row{ grid-template-columns: 1fr; } }
+  .icon-card{
+    background: var(--black);
+    border-radius:4px;
+    padding: 56px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .icon-mark{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+  .icon-mark span{
+    font-weight:700;
+    font-size: 44px;
+    color:#fff;
+  }
+  .icon-mark .dot{
+    position:absolute;
+    width:16px;
+    height:16px;
+    background: var(--blue);
+    bottom: -8px;
+    right: -8px;
+  }
+
+  .scale-card{
+    background: var(--black);
+    border-radius:4px;
+    padding: 40px;
+    display:flex;
+    align-items:center;
+    gap: 32px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+  }
+  .scale-item{ display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .scale-item span{ font-size:12px; color: var(--grey); }
+  .sq{ border: 2px solid #fff; display:flex; align-items:center; justify-content:center; position:relative; flex-shrink:0; }
+  .sq b{ color:#fff; }
+  .sq .d{ position:absolute; background: var(--blue); }
+
+  .palette{ display:flex; border-radius:4px; overflow:hidden; margin-bottom:40px; }
+  .swatch{ flex:1; height: 88px; display:flex; align-items:flex-end; padding:10px; }
+  .swatch span{ font-size:11px; font-family: monospace; color: rgba(255,255,255,0.9); }
+  .swatch.light span{ color: rgba(0,0,0,0.6); }
+
+  footer{ font-size:13px; color:#6B6E80; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="section-label">Primärlogo — Schwarz mit Blau</div>
+  <div class="card">
+    <div class="logo">
+      <div class="logo-word">HSK<span class="square"></span></div>
+      <div class="logo-sub">webdesign</div>
+    </div>
+  </div>
+
+  <div class="section-label">Icon-Variante</div>
+  <div class="row">
+    <div class="icon-card">
+      <div class="icon-mark">
+        <span>H</span>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div class="icon-card">
+      <div class="logo">
+        <div class="logo-word" style="font-size:48px;">HSK<span class="square" style="width:11px;height:11px;transform:translateY(-6px);"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Icon in verschiedenen Größen</div>
+  <div class="scale-card">
+    <div class="scale-item">
+      <div class="sq" style="width:64px;height:64px;">
+        <b style="font-size:28px;">H</b>
+        <div class="d" style="width:10px;height:10px;bottom:-5px;right:-5px;"></div>
+      </div>
+      <span>64px</span>
+    </div>
+    <div class="scale-item">
+      <div class="sq" style="width:40px;height:40px;">
+        <b style="font-size:18px;">H</b>
+        <div class="d" style="width:7px;height:7px;bottom:-4px;right:-4px;"></div>
+      </div>
+      <span>40px</span>
+    </div>
+    <div class="scale-item">
+      <div class="sq" style="width:24px;height:24px;">
+        <b style="font-size:11px;">H</b>
+        <div class="d" style="width:5px;height:5px;bottom:-2px;right:-2px;"></div>
+      </div>
+      <span>24px (Favicon)</span>
+    </div>
+  </div>
+
+  <div class="section-label">Farbpalette</div>
+  <div class="palette">
+    <div class="swatch" style="background:#0A0A0A;"><span>#0A0A0A — Schwarz</span></div>
+    <div class="swatch" style="background:#3D5AFE;"><span>#3D5AFE — Blau</span></div>
+    <div class="swatch" style="background:#9A9CAE;"><span>#9A9CAE — Grau</span></div>
+    <div class="swatch light" style="background:#F6F6F8;"><span>#F6F6F8 — Hintergrund hell</span></div>
+  </div>
+
+  <footer>
+    Wortmarke „HSK" in Space Grotesk Bold, weiß auf Schwarz, mit blauem Quadrat als wiederkehrendem Akzent. Das Quadrat funktioniert auch einzeln als Icon (siehe Skalierungs-Varianten oben) fürs Favicon oder Profilbild.
+  </footer>
+
+</div>
+</body>
+</html>
